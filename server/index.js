@@ -8,9 +8,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-    host:"localhost",
+    host:"bacdb.cdfd2imbevr7.us-east-1.rds.amazonaws.com",
+    port: "3306",
     user: 'root',
-    password: "",
+    password: "12345678",
     database: "bac"
 });
 module.exports = { db };
