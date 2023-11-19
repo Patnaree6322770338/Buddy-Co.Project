@@ -16,7 +16,7 @@ function AuthForm() {
   const [date_of_birth, setDate] = useState('');
 
   const addUsers = () => {
-    Axios.post('http://localhost:3000/create', {
+    Axios.post('https://buddyandco-server-h8w9.onrender.com/create', {
         username,
         password,
         email,
@@ -30,7 +30,7 @@ function AuthForm() {
 
 const handleLogin = (e) => {
     e.preventDefault();
-    Axios.post('http://localhost:3000/login', { 
+    Axios.post('https://buddyandco-server-h8w9.onrender.com/login', { 
         username,
         password
     }).then((response) => {

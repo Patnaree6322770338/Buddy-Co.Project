@@ -167,7 +167,7 @@ function HeroSection() {
             };
 
             const fetchConcerts = () => {
-                Axios.get('http://localhost:3000/concerts')
+                Axios.get('https://buddyandco-server-h8w9.onrender.com/concerts')
                     .then((response) => {
                         setConcerts(response.data);
                     })
@@ -176,7 +176,7 @@ function HeroSection() {
                     });
             };
             const fetchTickets = () => {
-                Axios.get('http://localhost:3000/tickets')
+                Axios.get('https://buddyandco-server-h8w9.onrender.com/tickets')
                     .then((response) => {
                         setTickets(response.data);
                     })

@@ -111,7 +111,7 @@ function Resale() {
    
 
     const addRe = () => {
-        Axios.post('http://localhost:3000/resale_ticket', {
+        Axios.post('https://buddyandco-server-h8w9.onrender.com/resale_ticket', {
             resaleDescription,
             resaleName,
             resalePrice,
@@ -185,7 +185,7 @@ function Resale() {
     const [resale, setResaleTickets] = useState([]); 
 
     const fetchResale = () => {
-        Axios.get('http://localhost:3000/resale_ticketx')
+        Axios.get('https://buddyandco-server-h8w9.onrender.com/resale_ticketx')
             .then((response) => {
                 setResaleTickets(response.data); 
             })

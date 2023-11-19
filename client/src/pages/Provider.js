@@ -110,7 +110,7 @@ function Header() {
     
 
     const addCon = () => {
-        Axios.post('http://localhost:3000/cons', {
+        Axios.post('https://buddyandco-server-h8w9.onrender.com/cons', {
             concert_name,
             concert_description,
             date_time,
@@ -191,7 +191,7 @@ function ContactSectiontwo() {
     
 
     const addTicket = () => {
-        Axios.post('http://localhost:3000/ticket', {
+        Axios.post('https://buddyandco-server-h8w9.onrender.com/ticket', {
             seat_number,
             ticket_price,
             ticket_name,
