@@ -139,7 +139,7 @@ app.get('/tickets', (req, res) => {
     });
 });
 
-app.get('/resale_ticket', (req, res) => {
+app.get('/resale_ticketx', (req, res) => {
     const query = "SELECT resale_id, resale_name, resaleseat_number, resale_price, resale_description FROM resale_ticket";
 
     db.query(query, (err, results) => {
